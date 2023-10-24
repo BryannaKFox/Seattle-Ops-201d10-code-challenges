@@ -12,6 +12,7 @@
 
 # Main
 
+bash helloworld.sh
 
 
 # End
