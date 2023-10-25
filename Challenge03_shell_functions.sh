@@ -9,16 +9,14 @@
 
 # Basic function
 print_something () {
-    last
 
   echo "This is the login history"
 }
 
 # Main
 
-for ((i=0; i<3; i++)); do
-    echo "This is the login history"
-
-done
+print_something
+print_something
+print_something
 
 # End
