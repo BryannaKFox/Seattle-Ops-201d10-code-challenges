@@ -16,7 +16,7 @@ print_something () {
 # Main
 
 for ((i=0; i<3; i++)); do
-    print_login_history
+    print_login_history "This is the login history"
     done
 
 # End
