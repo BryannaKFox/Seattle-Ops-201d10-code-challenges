@@ -10,13 +10,17 @@
 # Basic function
 print_something () {
     last
+
   echo "This is the login history"
 }
 
 # Main
 
 for ((i=0; i<3; i++)); do
-    print_login_history "This is the login history"
-    done
+    echo "This is the login history - Run $i:"
+    print_login_history
+    echo "======================================"
+
+done
 
 # End
