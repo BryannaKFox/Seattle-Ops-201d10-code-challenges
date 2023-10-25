@@ -10,6 +10,8 @@
 # Basic function
 print_something () {
 
+last 
+
   echo "This is the login history"
 }
 
