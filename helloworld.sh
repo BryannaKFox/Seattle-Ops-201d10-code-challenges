@@ -12,7 +12,7 @@
 
 # Main
 
-bash helloworld.sh
+echo "Hello World"
 
 
 # End
