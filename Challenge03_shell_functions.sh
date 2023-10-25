@@ -17,9 +17,7 @@ print_something () {
 # Main
 
 for ((i=0; i<3; i++)); do
-    echo "This is the login history - Run $i:"
-    print_login_history
-    echo "======================================"
+    echo "This is the login history"
 
 done
 
