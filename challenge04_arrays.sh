@@ -44,4 +44,3 @@ file_name="Oz4.txt"
 touch "$ohmy/$file_name"
 echo "File '$file_name' created in directory '$ohmy'."
 
-done
