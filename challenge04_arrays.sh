@@ -28,19 +28,19 @@ directory+=("$new_saying")
 echo "All directories in the array: ${directory[@]}"
 
 # Create a new .txt file in each directory using array indices
-file_name="file_$testing.txt"
+file_name="Oz1.txt"
 touch "$lion/$file_name"
 echo "File '$file_name' created in directory '$lion'."
 
-file_name="file_$testing.txt"
+file_name="Oz2.txt"
 touch "$tiger/$file_name"
 echo "File '$file_name' created in directory '$tiger'."
 
-file_name="file_$testing.txt"
+file_name="Oz3.txt"
 touch "$bear/$file_name"
 echo "File '$file_name' created in directory '$bear'."
 
-file_name="file_$testing.txt"
+file_name="Oz4.txt"
 touch "$ohmy/$file_name"
 echo "File '$file_name' created in directory '$ohmy'."
 
