@@ -15,10 +15,10 @@ mkdir "ohmy"
 saying=("lion" "tiger" "bear" "ohmy")
 
 # Accessing elements in the array
-echo "The first saying: ${saying[lion]}"
-echo "The second saying: ${saying[tiger]}"
-echo "The third saying: ${saying[bear]}"
-echo "The fourth saying: ${saying[ohmy]}"
+echo "The first saying: ${saying[0]}"
+echo "The second saying: ${saying[1]}"
+echo "The third saying: ${saying[2]}"
+echo "The fourth saying: ${saying[3]}"
 
 # Append a new saying to the array
 new_saying="there's no place like home"
