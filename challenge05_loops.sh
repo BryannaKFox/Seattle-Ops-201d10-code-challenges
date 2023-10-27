@@ -19,7 +19,7 @@
 
     # Display running processes
     echo "Running processes:"
-    ps aux
+    ps 
 
     # Ask the user for a PID
     read -p "Enter the PID of the process to kill (Ctrl+C to exit): " pid
