@@ -8,29 +8,20 @@
 # Basic for loop
 #!/bin/bash
 
- #Basic for loop
- names="Billy Bob Joe"
- for name in $names
- do
- echo $name
- done
+ while true; do
+    # Display running processes
+    echo "Running processes:"
+    ps aux
 
+    # Ask the user for a PID
+    read -p "Enter the PID of the process to kill (Ctrl+C to exit): " pid
 
-
-    echo -e "For Loop complete\n"
-
-
-# Basic while loop
-
-while true
-do
-  echo -e "What would you like me to say?\n"
-  read input
-  echo $input
-
-  echo -e "\nTo stop this script at any time, press Ctrl + C\n"
+    
+        # Kill the process with the given PID
+        if kill -9 "$pid"; then
+            echo "Process with PID $pid killed successfully."
+        else
+            echo "Failed to kill process with PID $pid."
+        fi
+    
 done
-
-
-
-# End
