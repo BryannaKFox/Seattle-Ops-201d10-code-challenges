@@ -30,7 +30,6 @@ do
 
   echo -e "\nTo stop this script at any time, press Ctrl + C\n"
 done
-done
 
 
 
