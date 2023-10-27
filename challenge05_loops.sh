@@ -15,7 +15,7 @@
  echo $name
  done
 
-do
+
 
     # Display running processes
     echo "Running processes:"
