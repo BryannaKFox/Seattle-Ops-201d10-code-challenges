@@ -17,21 +17,19 @@
 
 
 
-    # Display running processes
-    echo "Running processes:"
-    ps 
+    echo -e "For Loop complete\n"
 
-    # Ask the user for a PID
-    read -p "Enter the PID of the process to kill (Ctrl+C to exit): " pid
 
-    # Check if the PID is valid
-    if [[ "$pid" =~ ^[0-9]+$ ]]; then
-        # Kill the process with the given PID
-        kill -9 "$pid"
-        echo "Process with PID $pid killed."
-    else
-        echo "Invalid PID. Please enter a valid numeric PID."
-    fi
+# Basic while loop
+
+while true
+do
+  echo -e "What would you like me to say?\n"
+  read input
+  echo $input
+
+  echo -e "\nTo stop this script at any time, press Ctrl + C\n"
+done
 done
 
 
