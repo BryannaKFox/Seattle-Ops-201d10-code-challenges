@@ -22,25 +22,25 @@ echo "The fourth saying: ${saying[3]}"
 
 # Append a new saying to the array
 new_saying="there's no place like home"
-directory+=("$new_saying")
+directory+=($new_saying)
 
 # Print the whole array with a single echo
 echo "All directories in the array: ${directory[@]}"
 
 # Create a new .txt file in each directory using array indices
-file_name="Oz1.txt"
-touch "$lion/$file_name"
-echo "File '$file_name' created in directory '$lion'."
 
-file_name="Oz2.txt"
-touch "$tiger/$file_name"
-echo "File '$file_name' created in directory '$tiger'."
+touch /lion/Oz0.txt
+echo "File '$Oz0.txt' created in directory '$lion'."
 
-file_name="Oz3.txt"
-touch "$bear/$file_name"
-echo "File '$file_name' created in directory '$bear'."
 
-file_name="Oz4.txt"
-touch "$ohmy/$file_name"
-echo "File '$file_name' created in directory '$ohmy'."
+touch /tiger/Oz1.txt
+echo "File '$Oz1.txt' created in directory '$tiger'."
+
+
+touch /bear/Oz2.txt
+echo "File '$Oz2.txt' created in directory '$bear'."
+
+
+touch /ohmy/Oz3.txt
+echo "File '$Oz3.txt' created in directory '$ohmy'."
 
