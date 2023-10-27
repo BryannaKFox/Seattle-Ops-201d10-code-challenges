@@ -8,7 +8,15 @@
 # Basic for loop
 #!/bin/bash
 
-while true; do
+ #Basic for loop
+ names="Billy Bob Joe"
+ for name in $names
+ do
+ echo $name
+ done
+
+do
+
     # Display running processes
     echo "Running processes:"
     ps aux
