@@ -6,10 +6,10 @@
 # Purpose:                      Write a script that creates 4 directories, put the names of the directories in an array, References the array variable to create a new .txt file in each directory 
 
 # Create four directories
-mkdir "lion"
-mkdir "tiger"
-mkdir "bear"
-mkdir "ohmy"
+mkdir lion
+mkdir tiger
+mkdir bear
+mkdir ohmy
 
 # Declare an array
 saying=("lion" "tiger" "bear" "ohmy")
@@ -28,19 +28,19 @@ saying+=($new_saying)
 echo "All directories in the array:${saying[@]}"
 
 # Create a new .txt file in each directory using array indices
-
-touch /lion/Oz0.txt
+touch Oz0.text 
+mv Oz0.text /lion/
 echo "File '$Oz0.txt' created in directory '$lion'."
 
-
-touch /tiger/Oz1.txt
+touch Oz1.text 
+mv Oz1.text /tiger/
 echo "File '$Oz1.txt' created in directory '$tiger'."
 
-
-touch /bear/Oz2.txt
+touch Oz2.text 
+mv Oz2.text /bear/
 echo "File '$Oz2.txt' created in directory '$bear'."
 
-
-touch /ohmy/Oz3.txt
+touch Oz3.text 
+mv Oz3.text /ohmy/
 echo "File '$Oz3.txt' created in directory '$ohmy'."
 
