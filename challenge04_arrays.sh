@@ -6,10 +6,10 @@
 # Purpose:                      Write a script that creates 4 directories, put the names of the directories in an array, References the array variable to create a new .txt file in each directory 
 
 # Create four directories
-mkdir lion
-mkdir tiger
-mkdir bear
-mkdir ohmy
+mkdir -p lion
+mkdir -p tiger
+mkdir -p bear
+mkdir -p ohmy
 
 # Declare an array
 saying=("lion" "tiger" "bear" "ohmy")
