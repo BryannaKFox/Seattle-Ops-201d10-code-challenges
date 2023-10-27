@@ -22,10 +22,10 @@ echo "The fourth saying: ${saying[3]}"
 
 # Append a new saying to the array
 new_saying="there's no place like home"
-directory+=($new_saying)
+saying+=($new_saying)
 
 # Print the whole array with a single echo
-echo "All directories in the array: ${directory[@]}"
+echo "All directories in the array:${saying[@]}"
 
 # Create a new .txt file in each directory using array indices
 
