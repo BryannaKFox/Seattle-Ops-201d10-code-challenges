@@ -29,18 +29,18 @@ echo "All directories in the array:${saying[@]}"
 
 # Create a new .txt file in each directory using array indices
 touch Oz0.text 
-mv Oz0.text /lion/
+mv Oz0.text /home/bryanna/.vscode-server/extensions/Seattle-Ops-201d10-code-challenges/lion
 echo "File '$Oz0.txt' created in directory '$lion'."
 
 touch Oz1.text 
-mv Oz1.text /tiger/
+mv Oz1.text /home/bryanna/.vscode-server/extensions/Seattle-Ops-201d10-code-challenges/tiger
 echo "File '$Oz1.txt' created in directory '$tiger'."
 
 touch Oz2.text 
-mv Oz2.text /bear/
+mv Oz2.text /home/bryanna/.vscode-server/extensions/Seattle-Ops-201d10-code-challenges/bear
 echo "File '$Oz2.txt' created in directory '$bear'."
 
 touch Oz3.text 
-mv Oz3.text /ohmy/
+mv Oz3.text /home/bryanna/.vscode-server/extensions/Seattle-Ops-201d10-code-challenges/ohmy
 echo "File '$Oz3.txt' created in directory '$ohmy'."
 
