@@ -16,6 +16,11 @@
     # Ask the user for a PID
     read -p "Enter the PID of the process to kill (Ctrl+C to exit): " pid
 
+    # Validate the entered PID
+        if ! [[ "$pid" =~ ^[0-9]+$ ]]; then
+            echo "Invalid PID. Please enter a valid numerical PID."
+            continue
+        fi
     
         # Kill the process with the given PID
         if kill -9 "$pid"; then
