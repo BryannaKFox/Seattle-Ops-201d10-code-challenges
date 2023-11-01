@@ -17,7 +17,7 @@ sudo lshw -C cpu | grep -E "Product:|vendor:|physical ID:|bus info:|width:"
 
 #find and display the RAM information 
 
-ecoh "The RAM information including: Description, Physical ID, and Size"
+echo "The RAM information including: Description, Physical ID, and Size"
 sudo lshw -short | grep -E "memory" 
 
 #Find and display the Display adapter information
