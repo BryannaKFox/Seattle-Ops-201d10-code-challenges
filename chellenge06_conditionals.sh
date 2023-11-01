@@ -10,7 +10,7 @@ lands=("lion" "tiger" "bear" "ohmy")
 
 # Function to check if munchkins are in the lands of OZ
 munchkin_in_land() {
-  search_munchkin="$1" # item I am looking for in my list
+  search_munchkin="$joe" # item I am looking for in my list
   for munchkin in "${lands[@]}"; do
     # check if the munchkin I am searching for is in the array or not
     if [ "$munchkin" == "$search_munchkin"]; then
