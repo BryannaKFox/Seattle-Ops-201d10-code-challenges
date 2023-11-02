@@ -8,7 +8,7 @@
 #find and display the name of the computer
 
 echo "The Name of the Computer"
-sudo lshw -short | grep -E "system"
+sudo hostname
 
 #find and display the CPU information 
 
