@@ -1,7 +1,7 @@
-# Script:                       ops201d10-challenge08-windows-batch-scripting
-# Author:                       Bryanna Fox
-# Date of latest revision:      11/1/2023
-# Purpose:                      Identify the script
+:: Script:                       ops201d10-challenge08-windows-batch-scripting
+:: Author:                       Bryanna Fox
+:: Date of latest revision:      11/1/2023
+:: Purpose:                      Identify the script
 
 @echo off
 :: echo will display the following text in "". @echo off is telling the computer to NOT display ANY of the commands in the script.
