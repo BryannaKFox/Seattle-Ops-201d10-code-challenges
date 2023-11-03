@@ -1,4 +1,7 @@
-
+# Script:                       ops201d10-challenge09_logretrevial
+# Author:                       Bryanna Fox
+# Date of latest revision:      11/2/2023
+# Purpose:                      Retrieve the logs
 
 #Output all events from the System log that occurred in the last 24 hours to a file on your desktop named last_24.txt
 $startTime = (Get-Date).AddDays(-1)
