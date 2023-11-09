@@ -19,10 +19,30 @@ $errorEvents | Out-File -FilePath $outputFilePath -Force
 Write-Host "Error events from the System log have been exported to: $outputFilePath"
 
 #Print to the screen all events with ID of 16 from the System event log. 
-Get-WinEvent -LogName 'System' -FilterHashtable @{ ID = 16 } -ErrorAction Stop | ForEach-Object { Write-Host "Event ID: $($_.Id) `nTime Created: $($_.TimeCreated) `nMessage: $($_.Message) `n------------------------" } } catch { Write-Host "Error: $_" 
+try {
+    Get-WinEvent -LogName 'System' -FilterHashtable @{ ID = 16 } -ErrorAction Stop | ForEach-Object {
+        Write-Host "Event ID: $($_.Id) `nTime Created: $($_.TimeCreated) `nMessage: $($_.Message) `n------------------------"
+    }
+} catch {
+    Write-Host "Error: $_"
+}
 
 #Print to the screen the most recent 20 entries from the System event log.
-Get-WinEvent -LogName 'System' -MaxEvents 20 -ErrorAction Stop | ForEach-Object { Write-Host "Event ID: $($_.Id) `nTime Created: $($_.TimeCreated) `nMessage: $($_.Message) `n------------------------" } } catch { Write-Host "Error: $_"
+try {
+    Get-WinEvent -LogName 'System' -MaxEvents 20 -ErrorAction Stop | ForEach-Object {
+        Write-Host "Event ID: $($_.Id) `nTime Created: $($_.TimeCreated) `nMessage: $($_.Message) `n------------------------"
+    }
+} catch {
+    Write-Host "Error: $_"
+}
 
 #Print to the screen all sources of the 500 most recent entries in the System event log. Ensure that the full lines are displayed (get rid of the ... and show the entire text.)
-Get-WinEvent -LogName 'System' -MaxEvents 500 -ErrorAction Stop | Select-Object -ExpandProperty ProviderName } catch { Write-Host "Error: $_"
+try {
+    Get-WinEvent -LogName 'System' -MaxEvents 500 -ErrorAction Stop | 
+    Select-Object -ExpandProperty ProviderName | 
+    ForEach-Object {
+        Write-Host "Provider Name: $_"
+    }
+} catch {
+    Write-Host "Error: $_"
+}
